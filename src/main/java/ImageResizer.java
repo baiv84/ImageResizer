@@ -1,11 +1,22 @@
+import javax.swing.*;
+
 public class ImageResizer {
     public static void main(String[] args) {
-        String srcFolder = "/Users/admin/space3";
-        String dstFolder = "/Users/admin/space3_out";
-
-        Resizable obj = new SimpleResizer();
-        obj.ResizeFolder(srcFolder, dstFolder);
+        new ImageResizer();
 
 
+
+    }
+    public ImageResizer() {
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                JFrame frame = new JFrame("Image Resizer v1.0");
+                frame.add(new MainWindow());
+                frame.pack();
+                frame.setLocationRelativeTo(null);
+                frame.setVisible(true);
+            }
+        });
     }
 }
