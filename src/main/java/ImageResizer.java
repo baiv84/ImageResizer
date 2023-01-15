@@ -46,6 +46,6 @@ public class ImageResizer {
             ex.printStackTrace();
         }
 
-        System.out.println("Duration: " + (System.currentTimeMillis() - start) + " !");
+        System.out.println("Duration: " + (System.currentTimeMillis() - start));
     }
 }
