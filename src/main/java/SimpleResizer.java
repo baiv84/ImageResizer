@@ -9,7 +9,7 @@ public class SimpleResizer implements Resizable {
         long start = System.currentTimeMillis();
 
         File[] files = srcDir.listFiles();
-
+        System.out.println("List length - " + files.length);
         try {
             for (File file : files) {
                 BufferedImage image = ImageIO.read(file);

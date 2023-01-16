@@ -3,10 +3,8 @@ import javax.swing.*;
 public class ImageResizer {
     public static void main(String[] args) {
         new ImageResizer();
-
-
-
     }
+
     public ImageResizer() {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
